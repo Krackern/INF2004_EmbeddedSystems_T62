@@ -58,9 +58,7 @@ endif()
 
 
 # No sys version
-add_executable(${PROJECT}_nosys 
-    car_wifi.c
-    )
+
 target_compile_definitions(${PROJECT}_nosys PRIVATE
     WIFI_SSID=\"${WIFI_SSID}\"
     WIFI_PASSWORD=\"${WIFI_PASSWORD}\"
