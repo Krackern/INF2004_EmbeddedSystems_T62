@@ -19,7 +19,9 @@ Blacklisted and Whitelisted files will be stored in the microSD card.
 
 # Benefits:
 Affordability: The use of the Raspberry Pi Pico W ensures a low-cost solution for PC auditing, making it accessible for educational institutions and small businesses with budget constraints.
+
 Enhanced Security: By blacklisting insecure or unauthorised applications and monitoring system changes, the tool significantly improves the security posture of audited PCs.
+
 Versatility: Cross-platform compatibility means that lab technicians can use the tool on a wide variety of PCs, regardless of the operating system, streamlining the auditing process.
 Documentation: Detailed and exportable audit reports enable lab technicians to maintain comprehensive records of PC audits and security assessments.
 
