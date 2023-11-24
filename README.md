@@ -7,7 +7,6 @@ System Overview
 
 
 # Flowchart
-<img width="227" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/d7ca18fb-6823-44af-9bb0-a6840cb872e7">
 <img width="500" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/f814d108-0a3a-420f-9a4d-768e8c240fe8">
 
 
