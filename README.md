@@ -56,7 +56,7 @@ Flowchart Overview:
 Press a button on the Raspberry Pi Pico to initiate an HID command.
 The Pico executes the command, such as reading or writing files using MSC (Mass Storage Class) communication through USB.
 
-2. Output to SD Card:
+2.Output to SD Card:
 The output of the HID command is stored on the SD card.
 Error handling: If the HID command is unsuccessful, rerun the command in PowerShell.
 
