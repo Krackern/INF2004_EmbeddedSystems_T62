@@ -5,6 +5,45 @@ System Overview
 # Block Diagram
 <img width="689" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/b93a0258-6bf4-4003-a97d-f0035602ee2d">
 
+Block Diagram Overview:
+
+Pico Drivers:
+1.MicroSD Driver: Facilitates communication with the MicroSD card for file storage.
+2.HID Driver: Executes commands, generating text files as output, and links to SD card storage.
+3.MSC Driver: Manages Mass Storage Class communication, linking to the generation of text files as output.
+4.WiFi Driver: Enables communication with a web server for uploading and downloading data.
+
+MicroSD (SD Card Storage):
+-The MicroSD driver allows the Pico to interact with the SD card, providing a reliable storage medium for files.
+
+HID Driver (Generate Text File as Output):
+-Initiates commands through HID, executing operations that result in the generation of text files.
+-Links to SD card storage to save the generated text files.
+
+MSC Driver (Link to Generate Text File as Output):
+-Manages Mass Storage Class communication, establishing a connection to the generation of text files as output.
+
+WiFi Driver (Web Server - Webpage):
+-The WiFi driver facilitates communication with a web server.
+-The web server hosts a webpage that allows reading and sorting of blacklist and whitelist files.
+-SD card storage enables the retrieval and uploading of files between the Pico and the web server.
+
+Workflow:
+
+File Generation:
+-HID and MSC drivers collaborate to execute commands and generate text files on the Pico.
+-The generated files are stored on the MicroSD card via the SD card storage driver.
+
+Web Server Interaction:
+-The Pico, utilizing the WiFi driver, communicates with a web server.
+-The web server hosts a webpage that enables reading and sorting of blacklist and whitelist files stored on the SD card.
+
+Data Upload:
+-Files are uploaded from the Pico's SD card to the web server, facilitating data sharing.
+
+This project integrates various drivers on the Raspberry Pi Pico to handle file operations, execute commands through HID, establish Mass Storage Class communication, and enable WiFi connectivity for web server interaction. The collaborative efforts of these components provide a comprehensive solution for managing and categorizing data.
+
+
 
 # Flowchart
 <img width="500" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/f814d108-0a3a-420f-9a4d-768e8c240fe8">
@@ -13,27 +52,26 @@ This project involves using a Raspberry Pi Pico microcontroller to perform file 
 
 Flowchart Overview:
 
-Run HID Command (MSC Communication):
-
+1.Run HID Command (MSC Communication):
 Press a button on the Raspberry Pi Pico to initiate an HID command.
 The Pico executes the command, such as reading or writing files using MSC (Mass Storage Class) communication through USB.
-Output to SD Card:
 
+2. Output to SD Card:
 The output of the HID command is stored on the SD card.
 Error handling: If the HID command is unsuccessful, rerun the command in PowerShell.
-Read Output from SD Card:
 
+3.Read Output from SD Card:
 Read the output files (e.g., blacklist.txt, whitelist.txt) from the SD card.
 Error handling: If reading encounters issues, loop back to HID to rerun the command in PowerShell to retrieve the output.
-Compare Files:
 
+4.Compare Files:
 Compare the contents of the latest output files.
 Error handling: If files are not comparable, generate an additional "Others" file.
-Blacklist/Whitelist:
 
+5.Blacklist/Whitelist:
 Identify items based on the comparison, categorizing them into blacklist and whitelist.
-Send to Web Server and Generate PDF/CSV:
 
+6.Send to Web Server and Generate PDF/CSV:
 Send the categorized data to a web server.
 Generate PDF or CSV reports based on the categorized data.
 Error handling: If the server interaction encounters issues, loop back to rerun the command in PowerShell.
