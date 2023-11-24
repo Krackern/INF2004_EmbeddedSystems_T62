@@ -1,6 +1,35 @@
 # INF2004_EmbeddedSystems_T62
+# Introduction
+Our team will be proposing a PC Auditing tool using Raspberry Pi Pico W for Lab Technicians to use. The tool will assist lab technicians in auditing PCs and will work on Windows Operating System. Although the Raspberry Pi Pico W is a microcontroller, it is suited for developing a PC Auditing tool as it is low cost and widely available. 
+
+# Features
+Collection of Applications Running on the Windows PCs
+The tool will be able to determine what applications are running on the Windows PC and their versions.
+Blacklisting & Whitelisting of Applications
+The tool is capable of blacklisting and whitelisting applications to control which applications can be executed or accessed on the system. For example, if an application is not updated and may contain security vulnerabilities, the tool can blacklist the application
+Blacklisting: Prevent the execution of specific applications known to pose security risks or vulnerabilities. For instance, if an application is outdated or malicious, it can be blacklisted to protect the system.
+Whitelisting: Define a list of trusted applications to enhance security and restrict unauthorised software installations.
+Generation of Report
+The PC Auditing Tool offers a report generation feature, enabling lab technicians to create detailed audit reports for each audited PC. These reports may include information on blacklisted/whitelisted applications, system configurations, and potential security issues.
+Reports can be exported in various formats such as text file and CSV file, allowing for easy documentation and sharing of audit results.
+Data Logging in MicroSD Module
+To ensure data integrity and maintain an audit trail, the tool is equipped with a MicroSD module for logging and storing audit-related data.
+Detailed logs are maintained, including application execution history, system changes, and any security events or incidents that occur during the audit.
+Blacklisted and Whitelisted files will be stored in the microSD card.
+
+# Benefits:
+Affordability: The use of the Raspberry Pi Pico W ensures a low-cost solution for PC auditing, making it accessible for educational institutions and small businesses with budget constraints.
+Enhanced Security: By blacklisting insecure or unauthorised applications and monitoring system changes, the tool significantly improves the security posture of audited PCs.
+Versatility: Cross-platform compatibility means that lab technicians can use the tool on a wide variety of PCs, regardless of the operating system, streamlining the auditing process.
+Documentation: Detailed and exportable audit reports enable lab technicians to maintain comprehensive records of PC audits and security assessments.
+
+
 System Overview
 ![image](https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/114002549/091ce864-409b-47be-a5ac-37c7290d2fc9)
+
+# Component Diagram
+<img width="407" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/92ce94fb-da75-4b8e-ab88-6725c4da9129">
+
 
 # Block Diagram
 <img width="689" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/b93a0258-6bf4-4003-a97d-f0035602ee2d">
@@ -78,5 +107,7 @@ Error handling: If the server interaction encounters issues, loop back to rerun 
 
 This project utilizes the Raspberry Pi Pico's capabilities to perform file operations, comparisons, and web server interactions. The HID commands, file comparison, and server communication are integrated to achieve a streamlined workflow for managing data categorization and reporting.
 
+# Conclusion:
+The Raspberry Pi Pico W PC Auditing Tool is a cost-effective, user-friendly, and versatile solution designed to assist lab technicians in auditing and securing PCs. This tool enhances security, streamlines auditing processes, and provides robust documentation capabilities, making it an ideal choice for educational institutions, small businesses, and organisations with limited budgets.
 
 
