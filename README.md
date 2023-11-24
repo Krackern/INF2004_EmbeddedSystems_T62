@@ -26,7 +26,7 @@ Versatility: Cross-platform compatibility means that lab technicians can use the
 Documentation: Detailed and exportable audit reports enable lab technicians to maintain comprehensive records of PC audits and security assessments.
 
 
-System Overview
+# System Overview
 ![image](https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/114002549/091ce864-409b-47be-a5ac-37c7290d2fc9)
 
 # Component Diagram
