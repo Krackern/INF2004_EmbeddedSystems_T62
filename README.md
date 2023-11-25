@@ -33,10 +33,12 @@ Documentation: Detailed and exportable audit reports enable lab technicians to m
 # System Overview
 ![image](https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/114002549/091ce864-409b-47be-a5ac-37c7290d2fc9)
 
+The system comprises a MicroSD card for error log storage and information retrieval, a Pico microcontroller for data collection, processing, and transmission, a PC for information transfer, a web server for data visualization and file hosting, and a web interface for data access. Data flows from the MicroSD card and PC to the Pico for processing, then to the web server for storage and visualization, and finally to users for access and download. This system facilitates centralized data collection, processing, filtering, visualization, and download, offering a comprehensive solution for data management.
 
 # Component Diagram
 <img width="407" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/92ce94fb-da75-4b8e-ab88-6725c4da9129">
 
+The component diagram depicts the interactions between the system's core components: the MicroSD card, Pico microcontroller, PC, web server, and web interface. The Pico, serving as the central processing unit, retrieves information from the MicroSD card, drops scripts to the PC for data gathering, processes and filters the collected data, transmits it to the web server, and renders the data on a webpage. The PC communicates with the Pico via MSC, facilitating information exchange and processing support. The web server hosts the webpage and provides file hosting capabilities, enabling data visualization and PDF download based on whitelist and blacklist rules. The web interface serves as the user interaction point, allowing data access and analysis. This intricate interplay between components ensures centralized data collection, processing, filtering, visualization, and download, offering a streamlined solution for data management.
 
 # Block Diagram
 <img width="689" alt="image" src="https://github.com/Krackern/INF2004_EmbeddedSystems_T62/assets/121931429/b93a0258-6bf4-4003-a97d-f0035602ee2d">
