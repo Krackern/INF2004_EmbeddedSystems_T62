@@ -46,38 +46,38 @@ The component diagram depicts the interactions between the system's core compone
 Block Diagram Overview:
 
 Pico Drivers:
-1.MicroSD Driver: Facilitates communication with the MicroSD card for file storage.
-2.HID Driver: Executes commands, generating text files as output, and links to SD card storage.
-3.MSC Driver: Manages Mass Storage Class communication, linking to the generation of text files as output.
-4.WiFi Driver: Enables communication with a web server for uploading and downloading data.
+1. MicroSD Driver: Facilitates communication with the MicroSD card for file storage.
+2. HID Driver: Executes commands, generating text files as output, and links to SD card storage.
+3. MSC Driver: Manages Mass Storage Class communication, linking to the generation of text files as output.
+4. WiFi Driver: Enables communication with a web server for uploading and downloading data.
 
 MicroSD (SD Card Storage):
--The MicroSD driver allows the Pico to interact with the SD card, providing a reliable storage medium for files.
+1. The MicroSD driver allows the Pico to interact with the SD card, providing a reliable storage medium for files.
 
 HID Driver (Generate Text File as Output):
--Initiates commands through HID, executing operations that result in the generation of text files.
--Links to SD card storage to save the generated text files.
+1. Initiates commands through HID, executing operations that result in the generation of text files.
+2. Links to SD card storage to save the generated text files.
 
 MSC Driver (Link to Generate Text File as Output):
--Manages Mass Storage Class communication, establishing a connection to the generation of text files as output.
+1. Manages Mass Storage Class communication, establishing a connection to the generation of text files as output.
 
 WiFi Driver (Web Server - Webpage):
--The WiFi driver facilitates communication with a web server.
--The web server hosts a webpage that allows reading and sorting of blacklist and whitelist files.
--SD card storage enables the retrieval and uploading of files between the Pico and the web server.
+1. The WiFi driver facilitates communication with a web server.
+2. The web server hosts a webpage that allows reading and sorting of blacklist and whitelist files.
+3. SD card storage enables the retrieval and uploading of files between the Pico and the web server.
 
 Workflow:
 
 File Generation:
--HID and MSC drivers collaborate to execute commands and generate text files on the Pico.
--The generated files are stored on the MicroSD card via the SD card storage driver.
+1. HID and MSC drivers collaborate to execute commands and generate text files on the Pico.
+2. The generated files are stored on the MicroSD card via the SD card storage driver.
 
 Web Server Interaction:
--The Pico, utilizing the WiFi driver, communicates with a web server.
--The web server hosts a webpage that enables reading and sorting of blacklist and whitelist files stored on the SD card.
+1. The Pico, utilizing the WiFi driver, communicates with a web server.
+2. The web server hosts a webpage that enables reading and sorting of blacklist and whitelist files stored on the SD card.
 
 Data Upload:
--Files are uploaded from the Pico's SD card to the web server, facilitating data sharing.
+1. Files are uploaded from the Pico's SD card to the web server, facilitating data sharing.
 
 This project integrates various drivers on the Raspberry Pi Pico to handle file operations, execute commands through HID, establish Mass Storage Class communication, and enable WiFi connectivity for web server interaction. The collaborative efforts of these components provide a comprehensive solution for managing and categorizing data.
 
@@ -90,23 +90,23 @@ This project involves using a Raspberry Pi Pico microcontroller to perform file 
 
 Flowchart Overview:
 
-1.Run HID Command (MSC Communication):
+1. Run HID Command (MSC Communication):
 Press a button on the Raspberry Pi Pico to initiate an HID command.
 The Pico executes the command, such as reading or writing files using MSC (Mass Storage Class) communication through USB.
 
-2.Output to SD Card:
+2. Output to SD Card:
 The output of the HID command is stored on the SD card.
 Error handling: If the HID command is unsuccessful, rerun the command in PowerShell.
 
-3.Read Output from SD Card:
+3. Read Output from SD Card:
 Read the output files (e.g., blacklist.txt, whitelist.txt) from the SD card.
 Error handling: If reading encounters issues, loop back to HID to rerun the command in PowerShell to retrieve the output.
 
-4.Compare Files:
+4. Compare Files:
 Compare the contents of the latest output files.
 Error handling: If files are not comparable, generate an additional "Others" file.
 
-5.Blacklist/Whitelist:
+5. Blacklist/Whitelist:
 Identify items based on the comparison, categorizing them into blacklist and whitelist.
 
 6.Send to Web Server and Generate PDF/CSV:
