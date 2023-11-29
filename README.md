@@ -66,7 +66,12 @@ WiFi Driver (Web Server - Webpage):
 * The web server hosts a webpage that allows reading and sorting of blacklist and whitelist files.
 * SD card storage enables the retrieval and uploading of files between the Pico and the web server.
 
-Workflow:
+# Web Server Details:
+* Website: http://35.212.228.98/Embedded-PHP/report.php
+* User: dev
+* Password: dev123
+
+# Workflow:
 
 File Generation:
 * HID and MSC drivers collaborate to execute commands and generate text files on the Pico.
@@ -114,11 +119,23 @@ Send the categorized data to a web server.
 Generate PDF or CSV reports based on the categorized data.
 Error handling: If the server interaction encounters issues, loop back to rerun the command in PowerShell.
 
+This project utilizes the Raspberry Pi Pico's capabilities to perform file operations, comparisons, and web server interactions. The HID commands, file comparison, and server communication are integrated to achieve a streamlined workflow for managing data categorization and reporting.
+
 # Future Works
+1. Scalability
+  - Allow for mounting to different Operating Systems such as Linux and MacOS
+  - Allow for different File Systems such as NTFS, not just FATFS
+  - Drop not just scripts which get their processes and their running versions, but also scripts that can retrieve other information on the Host PC 
+2. Additional Features
+  - Allow for Real Time Monitoring System
 
 # Claimed vs Developed Functions
-
-This project utilizes the Raspberry Pi Pico's capabilities to perform file operations, comparisons, and web server interactions. The HID commands, file comparison, and server communication are integrated to achieve a streamlined workflow for managing data categorization and reporting.
+| Claimed Functions  | Developed Functions |
+| ------------- | ------------- |
+| Drop Scripts into Host PC from Pico | Send Host PC certain keystrokes (in this case, to get the processes and their versions) and output it to a text file to store in the SD Card|
+| Error logs to be sent to the SD Card  | Store the output file of the processes and their versions into the SD Card |
+| Analyse the output file by blacklisting and whitelisting them  | Store the output file of the processes and their versions in the SD Card (Cannot get the blacklist and whitelist working) |
+| Error logs to be sent to the SD Card  | Store the output file of the processes and their versions into the SD Card |
 
 # Conclusion:
 The Raspberry Pi Pico W PC Auditing Tool is a cost-effective, user-friendly, and versatile solution designed to assist lab technicians in auditing and securing PCs. This tool enhances security, streamlines auditing processes, and provides robust documentation capabilities, making it an ideal choice for educational institutions, small businesses, and organisations with limited budgets.
