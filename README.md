@@ -114,7 +114,7 @@ Error handling: If files are not comparable, generate an additional "Others" fil
 5. Blacklist/Whitelist:
 Identify items based on the comparison, categorizing them into blacklist and whitelist.
 
-6.Send to Web Server and Generate PDF/CSV:
+6. Send to Web Server and Generate PDF/CSV:
 Send the categorized data to a web server.
 Generate PDF or CSV reports based on the categorized data.
 Error handling: If the server interaction encounters issues, loop back to rerun the command in PowerShell.
