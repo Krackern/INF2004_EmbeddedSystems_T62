@@ -114,6 +114,10 @@ Send the categorized data to a web server.
 Generate PDF or CSV reports based on the categorized data.
 Error handling: If the server interaction encounters issues, loop back to rerun the command in PowerShell.
 
+# Future Works
+
+# Claimed vs Developed Functions
+
 This project utilizes the Raspberry Pi Pico's capabilities to perform file operations, comparisons, and web server interactions. The HID commands, file comparison, and server communication are integrated to achieve a streamlined workflow for managing data categorization and reporting.
 
 # Conclusion:
