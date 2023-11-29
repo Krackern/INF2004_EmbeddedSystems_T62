@@ -8,8 +8,8 @@ The tool will be able to determine what applications are running on the Windows 
 
 2. Blacklisting & Whitelisting of Applications
 The tool is capable of blacklisting and whitelisting applications to control which applications can be executed or accessed on the system. For example, if an application is not updated and may contain security vulnerabilities, the tool can blacklist the application
-Blacklisting: Prevent the execution of specific applications known to pose security risks or vulnerabilities. For instance, if an application is outdated or malicious, it can be blacklisted to protect the system.
-Whitelisting: Define a list of trusted applications to enhance security and restrict unauthorised software installations.
+* Blacklisting: Prevent the execution of specific applications known to pose security risks or vulnerabilities. For instance, if an application is outdated or malicious, it can be blacklisted to protect the system.
+* Whitelisting: Define a list of trusted applications to enhance security and restrict unauthorised software installations.
 
 3. Generation of Report
 The PC Auditing Tool offers a report generation feature, enabling lab technicians to create detailed audit reports for each audited PC. These reports may include information on blacklisted/whitelisted applications, system configurations, and potential security issues.
@@ -46,38 +46,38 @@ The component diagram depicts the interactions between the system's core compone
 Block Diagram Overview:
 
 Pico Drivers:
-1. MicroSD Driver: Facilitates communication with the MicroSD card for file storage.
-2. HID Driver: Executes commands, generating text files as output, and links to SD card storage.
-3. MSC Driver: Manages Mass Storage Class communication, linking to the generation of text files as output.
-4. WiFi Driver: Enables communication with a web server for uploading and downloading data.
+* MicroSD Driver: Facilitates communication with the MicroSD card for file storage.
+* HID Driver: Executes commands, generating text files as output, and links to SD card storage.
+* MSC Driver: Manages Mass Storage Class communication, linking to the generation of text files as output.
+* WiFi Driver: Enables communication with a web server for uploading and downloading data.
 
 MicroSD (SD Card Storage):
-1. The MicroSD driver allows the Pico to interact with the SD card, providing a reliable storage medium for files.
+* The MicroSD driver allows the Pico to interact with the SD card, providing a reliable storage medium for files.
 
 HID Driver (Generate Text File as Output):
-1. Initiates commands through HID, executing operations that result in the generation of text files.
-2. Links to SD card storage to save the generated text files.
+* Initiates commands through HID, executing operations that result in the generation of text files.
+* Links to SD card storage to save the generated text files.
 
 MSC Driver (Link to Generate Text File as Output):
-1. Manages Mass Storage Class communication, establishing a connection to the generation of text files as output.
+* Manages Mass Storage Class communication, establishing a connection to the generation of text files as output.
 
 WiFi Driver (Web Server - Webpage):
-1. The WiFi driver facilitates communication with a web server.
-2. The web server hosts a webpage that allows reading and sorting of blacklist and whitelist files.
-3. SD card storage enables the retrieval and uploading of files between the Pico and the web server.
+* The WiFi driver facilitates communication with a web server.
+* The web server hosts a webpage that allows reading and sorting of blacklist and whitelist files.
+* SD card storage enables the retrieval and uploading of files between the Pico and the web server.
 
 Workflow:
 
 File Generation:
-1. HID and MSC drivers collaborate to execute commands and generate text files on the Pico.
-2. The generated files are stored on the MicroSD card via the SD card storage driver.
+* HID and MSC drivers collaborate to execute commands and generate text files on the Pico.
+* The generated files are stored on the MicroSD card via the SD card storage driver.
 
 Web Server Interaction:
-1. The Pico, utilizing the WiFi driver, communicates with a web server.
-2. The web server hosts a webpage that enables reading and sorting of blacklist and whitelist files stored on the SD card.
+* The Pico, utilizing the WiFi driver, communicates with a web server.
+* The web server hosts a webpage that enables reading and sorting of blacklist and whitelist files stored on the SD card.
 
 Data Upload:
-1. Files are uploaded from the Pico's SD card to the web server, facilitating data sharing.
+* Files are uploaded from the Pico's SD card to the web server, facilitating data sharing.
 
 This project integrates various drivers on the Raspberry Pi Pico to handle file operations, execute commands through HID, establish Mass Storage Class communication, and enable WiFi connectivity for web server interaction. The collaborative efforts of these components provide a comprehensive solution for managing and categorizing data.
 
