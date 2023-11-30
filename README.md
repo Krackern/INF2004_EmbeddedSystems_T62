@@ -7,9 +7,10 @@ Our team will be proposing a PC Auditing tool using Raspberry Pi Pico W for Lab 
 The tool will be able to determine what applications are running on the Windows PC and their versions.
 
 2. Blacklisting & Whitelisting of Applications
-The tool is capable of blacklisting and whitelisting applications to control which applications can be executed or accessed on the system. For example, if an application is not updated and may contain security vulnerabilities, the tool can blacklist the application
+The tool is capable of blacklisting and whitelisting applications to control which applications can be executed or accessed on the system. For example, if an application is not updated and may contain security vulnerabilities, the tool can blacklist the application. The applications are not listed under blacklist and whitelist will fall under the "others" category.
 * Blacklisting: Prevent the execution of specific applications known to pose security risks or vulnerabilities. For instance, if an application is outdated or malicious, it can be blacklisted to protect the system.
 * Whitelisting: Define a list of trusted applications to enhance security and restrict unauthorised software installations.
+* Others: List of applications that are not under the blacklist and whitelist files.
 
 3. Generation of Report
 The PC Auditing Tool offers a report generation feature, enabling lab technicians to create detailed audit reports for each audited PC. These reports may include information on blacklisted/whitelisted applications, system configurations, and potential security issues.
@@ -144,7 +145,7 @@ This project utilizes the Raspberry Pi Pico's capabilities to perform file opera
 | ------------- | ------------- |
 | Drop Scripts into Host PC from Pico | Send Host PC certain keystrokes (in this case, to get the processes and their versions) and output it to a text file to store in the SD Card|
 | Error logs to be sent to the SD Card  | Store the output file of the processes and their versions into the SD Card |
-| Analyse the output file by blacklisting and whitelisting them  | Store the output file of the processes and their versions in the SD Card (Cannot get the blacklist and whitelist working) |
+| Analyse the output file by blacklisting and whitelisting them  | Store the output file of the processes and their versions in the SD Card,  (SD card does not allow blacklisting and whitelisting to work) |
 | Error logs to be sent to the SD Card  | Store the output file of the processes and their versions into the SD Card |
 | Let Pico W to convert the files to PDFs or CSVs before uploading to Web Server  | Convert the files to PDFs and CSVs on Web Server |
 
@@ -157,6 +158,8 @@ The Raspberry Pi Pico W PC Auditing Tool is a cost-effective, user-friendly, and
   *   Unable to Blacklist/Whitelist from SD Card
 * Due to time constraint and limited resources, we were unable to fully integrate the features together
 * The mounting of the SD Card from Pico is slow
+* There is only 1 output file generated per run, which makes it slow for the user to view multiple files
+* The pico device itself cannot generate CSV and PDF, and needs the use of a webpage to generate and view these files (Webserver folder)
     
 
 
