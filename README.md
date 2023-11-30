@@ -121,6 +121,16 @@ Error handling: If the server interaction encounters issues, loop back to rerun 
 
 This project utilizes the Raspberry Pi Pico's capabilities to perform file operations, comparisons, and web server interactions. The HID commands, file comparison, and server communication are integrated to achieve a streamlined workflow for managing data categorization and reporting.
 
+# How to Set Up (Supposedly)
+* Put Audit_Tool into your Pico-Example folder, build and run normally
+* Wait for SD Card to mount onto PC after plugging it in, press the bootsel button to run the program
+
+ # How to Set Up (Actual)
+* Due to incompleted integration, we only managed to integrate USB HID & MSC, and also Blacklist/Whitelist Function & Uploading to Web Server Function via Pico
+* Audit_Tool Folder: Contains USB HID & MSC integrated codes
+* project-http Folder: Contains Blacklisting/Whitelisting & Uploading to Web Server Function integrated codes
+* WebServer Folder: Contains the PHP Codes for Conversion from Text File to PDF and CSV
+  
 # Future Works
 1. Scalability
   - Allow for mounting to different Operating Systems such as Linux and MacOS
