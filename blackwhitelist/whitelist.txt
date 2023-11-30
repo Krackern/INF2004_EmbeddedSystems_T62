@@ -1,0 +1,31 @@
+Windows Driver Package - FTDI CDM Driver Package - Bus/D2XX Driver (07/12/2013 2.08.30)                07/12/2013 2....
+Windows Driver Package - Texas Instruments, Inc. (WinUSB) StellarisICDIDeviceClass  (09/22/2019 2.2.1) 09/22/2019 2.2.1
+Windows Driver Package - Texas Instruments Inc. (WinUSB) StellarisDFUDeviceClass  (09/22/2019 1.4.1)   09/22/2019 1.4.1
+Windows Driver Package - Texas Instruments, Inc. (usbser) Ports  (09/22/2019 2.2.1)                    09/22/2019 2.2.1
+Windows Driver Package - FTDI CDM Driver Package - VCP Driver (07/12/2013 2.08.30)                     07/12/2013
+CPUID CPU-Z 2.03                                                                                       2.03
+Git                                                                                                    2.33.0.2
+Mozilla Firefox (x64 en-US)                                                                            119.0.1
+Mozilla Maintenance Service                                                                            104.0.1
+Raspberry Pi Pico SDK v1.5.1                                                                           1.5.1
+WinRAR 6.11 (64-bit)                                                                                   6.11.0
+Microsoft Visual C++ 2022 X64 Additional Runtime - 14.36.32532                                         14.36.32532
+Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664                                          12.0.40664
+Python 3.10.7 Standard Library (64-bit)                                                                3.10.7150.0
+Python 3.10.7 Test Suite (64-bit)                                                                      3.10.7150.0
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219                                            10.0.40219
+Python 3.10.7 pip Bootstrap (64-bit)                                                                   3.10.7150.0
+Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030                                          11.0.61030
+Windows Subsystem for Linux                                                                            2.0.9.0
+Python 3.10.7 Documentation (64-bit)                                                                   3.10.7150.0
+Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664                                             12.0.40664
+Python 3.10.7 Add to Path (64-bit)                                                                     3.10.7150.0
+Microsoft Visual Studio Installer                                                                      3.4.2246.31370
+Python 3.10.7 Tcl/Tk Support (64-bit)                                                                  3.10.7150.0
+Office 16 Click-to-Run Licensing Component                                                             16.0.16924.20150
+Office 16 Click-to-Run Extensibility Component                                                         16.0.16924.20124
+Adobe Acrobat DC (64-bit)                                                                              22.001.20085
+Lenovo Voice Service                                                                                   3.0.26.0
+Microsoft Update Health Tools                                                                          5.72.0.0
+Python 3.10.7 Development Libraries (64-bit)                                                           3.10.7150.0
+Python 3.10.7 Executables (64-bit)                                                                     3.10.7150.0
