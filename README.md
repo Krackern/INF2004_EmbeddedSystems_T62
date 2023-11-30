@@ -136,8 +136,13 @@ This project utilizes the Raspberry Pi Pico's capabilities to perform file opera
 | Error logs to be sent to the SD Card  | Store the output file of the processes and their versions into the SD Card |
 | Analyse the output file by blacklisting and whitelisting them  | Store the output file of the processes and their versions in the SD Card (Cannot get the blacklist and whitelist working) |
 | Error logs to be sent to the SD Card  | Store the output file of the processes and their versions into the SD Card |
+| Let Pico W to convert the files to PDFs or CSVs before uploading to Web Server  | Convert the files to PDFs and CSVs on Web Server |
 
 # Conclusion:
 The Raspberry Pi Pico W PC Auditing Tool is a cost-effective, user-friendly, and versatile solution designed to assist lab technicians in auditing and securing PCs. This tool enhances security, streamlines auditing processes, and provides robust documentation capabilities, making it an ideal choice for educational institutions, small businesses, and organisations with limited budgets.
+
+
+# Limitations / Challenges:
+
 
 
