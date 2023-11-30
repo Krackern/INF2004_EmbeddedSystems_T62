@@ -143,6 +143,9 @@ The Raspberry Pi Pico W PC Auditing Tool is a cost-effective, user-friendly, and
 
 
 # Limitations / Challenges:
-
+* Integration is not fully completed
+  *   Unable to Blacklist/Whitelist from SD Card
+* Due to time constraint and limited resources, we were unable to fully integrate the features together
+    
 
 
